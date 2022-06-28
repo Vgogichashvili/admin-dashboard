@@ -1,0 +1,106 @@
+<article>
+  <div class="main">
+    <h1>Update Car Information</h1>
+    <form  (ngSubmit)="onUpdateFormSubit(form)" name="loginForm"  #form="ngForm" >
+        <div class="inline-groups">
+          <mat-form-field appearance="fill">
+            <mat-label>Manufacturer</mat-label>
+            <input    required name="manufacturer" [(ngModel)]="formDefaultData[5]" matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Model</mat-label>
+            <input required name="model" [(ngModel)]="formDefaultData[7]"   matInput>
+          </mat-form-field>         
+        </div>
+  
+  
+        <div class="inline-groups">
+          <mat-form-field appearance="fill">
+            <mat-label>Year</mat-label>
+            <input required name="year" [(ngModel)]="formDefaultData[11]"   matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Vinc Code</mat-label>
+            <input required name="vinCode" [(ngModel)]="formDefaultData[10]"   matInput>
+          </mat-form-field>         
+        </div>
+  
+        <div class="inline-groups">
+            
+          <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input required name="price" [(ngModel)]="formDefaultData[9]"    matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Mile</mat-label>
+            <input required name="mile" [(ngModel)]="formDefaultData[6]"    matInput>
+          </mat-form-field>         
+            
+        </div>
+  
+        <div class="inline-groups">
+            
+          <mat-form-field appearance="fill">
+            <mat-label>Seller Phone Number</mat-label>
+            <input required name="phoneNumber" [(ngModel)]="formDefaultData[8]"    matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Image Url</mat-label>
+            <input required name="image" [(ngModel)]="formDefaultData[4]"    matInput>
+          </mat-form-field>         
+            
+        </div>
+  
+        <div class="inline-groups">
+            
+          <mat-form-field appearance="fill">
+            <mat-label>Drive Train Geo</mat-label>
+            <input required name="driveTrainGeo"  [(ngModel)]="formDefaultData[1]"   matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Drive Train Eng</mat-label>
+            <input required name="driveTrainEng"  [(ngModel)]="formDefaultData[0]" ngModel   matInput>
+          </mat-form-field>         
+            
+        </div>
+  
+        <div class="inline-groups">
+            
+          <mat-form-field appearance="fill">
+            <mat-label>Fuel Type Geo</mat-label>
+            <input required name="fuelTypeGeo"  [(ngModel)]="formDefaultData[3]"   matInput>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Fuel Type Eng</mat-label>
+            <input required name="fuelTypeEng"  [(ngModel)]="formDefaultData[2]" ngModel   matInput>
+          </mat-form-field>         
+            
+        </div>
+  
+        <!-- <button type="button" (click)="onImageBtnClick(imageInp)" mat-raised-button color="warn">Upload Image</button>
+        <img [src]="imageSrc" *ngIf="imageSrc" alt="">
+        <input (change)="onImageInpUpload($event)" #imageInp [ngStyle]="{
+            'display': 'none'
+        }"   type="file"> -->
+          
+        
+  
+         <div class="form-group-inline">
+            
+            <button (click)="onCancelBtnClick()" type="button"   mat-raised-button color="warn">Cancel</button>
+           
+            <button type="submit"  mat-raised-button color="primary">Save</button>
+     
+       </div>
+    </form>
+  </div>  
+  
+  
+  
+</article>
